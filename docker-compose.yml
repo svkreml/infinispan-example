@@ -1,0 +1,14 @@
+services:
+  infinispan-server:
+    image: infinispan/server:15.0
+    environment:
+      - USER=admin
+      - PASS=password
+    scale: 3
+    ports:
+      - "11221-11223:11222"
+    networks:
+      - a
+networks:
+  a:
+    driver: bridge

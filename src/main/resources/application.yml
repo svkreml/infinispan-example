@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: example
+
+
+springdoc:
+  api-docs:
+    path: /swagger/v1/openapi
+  swagger-ui:
+    path: /swagger-ui.html
+    displayOperationId: true
+
+infinispan:
+  hosts:
+    - 127.0.0.1:11221
+    - 127.0.0.1:11222
+    - 127.0.0.1:11223
+  username: admin
+  password: password
+  remote:
+    cache:
+      enabled: false
+    test:
+      enabled: false
+
+#infinispan.client.hotrod.uri: hotrod://admin:password@127.0.0.1:11222?auth_realm=default&sasl_mechanism=SCRAM-SHA-512
+
+

@@ -1,0 +1,13 @@
+package svkreml.infinispanexample;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class InfinispanExampleApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
